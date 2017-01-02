@@ -19,7 +19,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "babel-node server/index.js",
-    "client": "cd client && npm start",
+    "client": "cd app && npm start",
     "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1"
   },
   "devDependencies": {
