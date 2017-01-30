@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import './style/MessageForm.css';
 
 export default class MessageForm extends Component {
     constructor(props) {
@@ -28,7 +29,7 @@ export default class MessageForm extends Component {
   render() {
       return(
           <div className='message_form'>
-              <h3>Write New Message</h3>
+              <h5>Write New Message</h5>
               <form onSubmit={this.handleSubmit}>
                   <input
                       onChange={this.changeHandler}

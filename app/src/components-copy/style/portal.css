@@ -1,0 +1,11 @@
+body {
+    background-color: #222;
+}
+
+.portalCenter {
+    margin-left: 30px;
+}
+
+.portalCenter h2, .portalCenter p {
+    color: #eee;
+}

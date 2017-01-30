@@ -1,4 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 
-        .portalCenter h2, .portalCenter p{
-            color: #eee;
-        }
+body {
+    background-color: #222;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}
+
+.portalCenter {
+    margin-left: 30px;
+}
+.portalCenter__background{
+    position: absolute;
+    top:0;
+    width: 80vw;
+    margin: 0 10vw;
+    z-index: -1;
+}
+.portalCenter__content{
+    position: absolute;
+    left:10vw;
+    top:10vh;
+}
+.portalCenter h2, .portalCenter p {
+    color: #eee;
+}
+.portalCenter h2{
+  font-size: 2em;
+  font-weight: 400;
+}

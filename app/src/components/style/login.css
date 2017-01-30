@@ -5,41 +5,23 @@
     background-position: center;
 }
 .loginScreen .loginBox {
+  position: absolute;
     background-color: rgba(55,55,55,.4);
     border: solid rgba(0, 255, 255, 0.39) 1px;
     color: #eee;
     width: 500px;
-    margin: 25px auto;
+    left:0;
+    right:0;
+    margin: auto;
     padding: 25px;
+    top:50%;
+    transform: translateY(-50%);
 }
 .loginScreen .loginBox input, .loginScreen .loginBox label {
     display: block;
     margin: 10px auto;
+    text-align: center;
 }
 .loginScreen .loginBox input {
     color: #333;
-}
-.loginScreen .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-}
-.loginScreen .App-header {
-    background-color: rgba(0,0,0,.4);
-    padding: 20px;
-    color: white;
-
-}
-.loginScreen h2{
-    margin-bottom: 0px;
-}
-.loginScreen .App-intro {
-    font-size: large;
-}
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }

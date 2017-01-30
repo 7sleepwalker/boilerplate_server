@@ -1,0 +1,51 @@
+.gameList{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top:0;
+  left:0;
+  overflow: hidden;
+}
+.gameList__roster{
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.gameList-item{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 10vh 10vw;
+}
+.gameList-item__background{
+  background-color: grey;
+  box-shadow:0px 0px 50px 5px rgba(0, 0, 0, .7);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.gameList-item__content{
+  position: absolute;
+  margin: 10vh 10vw;
+  width: 500px;
+  height: 80vh;
+  padding: 25px;
+  top: 0;
+  right: 0;
+  color: #fff;
+  background-color: rgba(32, 32, 32, 0.95);
+}
+.gameList-item__content h2, .gameList-item__content-shortDescription{
+  text-align: right;
+}
+.gameList-item__content-longDescription{
+  top:50%;
+  position: absolute;
+  transform:translateY(-50%);
+}
+.gameList-item__content button{
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}

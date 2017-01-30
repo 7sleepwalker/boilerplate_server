@@ -1,23 +1,25 @@
 import React, {Component} from 'react';
 
+import './style/UsersList.css';
+
 
 export default class UsersList extends Component {
 
     render() {
           return (
               <div className='users'>
-                  <h3> Online Users </h3>
-                  <ul>
+                  <h5> Online Users </h5>
+                  <div>
                       {
                           this.props.users.map((user, i) => {
                               return (
-                                  <li key={i}>
+                                  <span key={i}>
                                       {user}
-                                  </li>
+                                  </span>
                               );
                           })
                       }
-                  </ul>
+                  </div>
               </div>
           );
       }

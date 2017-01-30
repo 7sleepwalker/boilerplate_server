@@ -1,0 +1,11 @@
+.users span{
+  border: 1px solid rgba(0, 255, 255, 0.46);
+  font-size: 12px;
+  margin: 2px;
+  padding: 2px;
+  transition: all .3s;
+}
+.users span:hover{
+  background-color: rgba(0, 255, 255, 0.46);
+  color: #eee;
+}

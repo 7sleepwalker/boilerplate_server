@@ -1,0 +1,10 @@
+.chat-box__messages{
+  padding-left: 5px;
+  padding-right: 5px;
+  height: calc(100vh - 125px);
+  overflow: auto;
+  overflow-x: hidden;
+}
+.application_message{
+  color: red;
+}

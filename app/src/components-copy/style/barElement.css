@@ -1,0 +1,12 @@
+.sideBar_element{
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+}
+.sideBar_element a{
+    font-size: 10px;
+    color: #eee;
+}
+.sideBar_element a:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,77 @@
+.sideBar{
+    position: fixed;
+    height: 100vh;
+    width: 70px;
+    background-color: #333;
+    top: 0;
+    left:0;
+    margin-left: -50px;
+    padding-right: 50px;
+    transition: margin .3s;
+    z-index: 100000;
+
+
+    /* FLEX STUFF */
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.sideBar:hover{
+    margin-left: 0;
+    padding-right: 0;
+}
+.sideBar_collapsed-title{
+    color: cyan;
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translate(32%, -50%) rotate(90deg);
+}
+.sideBar:hover .sideBar_collapsed{
+    display: none;
+}
+.sideBar:hover .sideBar_title:after{
+  width: 50px;
+}
+.sideBar::before, .sideBar::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: cyan;
+}
+.sideBar:before{
+    top:0;
+}
+.sideBar:after{
+    bottom:0;
+}
+.sideBar_title{
+    color: #eee;
+    margin: 10px 0;
+    margin-bottom: 25px;
+}
+.sideBar_title:after{
+  content: '';
+  position: absolute;
+  border: 0;
+  left:10px;
+  top:40px;
+  height: 2px;
+  background-color: rgba(255,255,255,1);
+}

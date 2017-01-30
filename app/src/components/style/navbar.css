@@ -1,10 +1,65 @@
 
-    .App nav{
+    .portalCenter nav{
         color: #eee;
         position: absolute;
-        right: 20px;
-        top:20px;
+        right: 10vw;
+        bottom: 20vh;
         height: 50px;
         width: 50px;
-        background-color: #333;
+    }
+    .portalCenter nav:before{
+      content: '';
+      position: absolute;
+      background-color: #444;
+      height: 200%;
+      width: 2px;
+      margin-left: -15px;
+      margin-top: 0;
+    }
+    .portalCenter nav:after{
+      content: 'Menu';
+      position: absolute;
+      top:-25px;
+      left:-20px;
+      color: #444;
+    }
+    .portalCenter nav li{
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+    }
+    .portalCenter nav li a{
+        display: block;
+        color: #999;
+        font-size: 25px;
+        letter-spacing: 3px;
+        margin-bottom: 3px;
+        padding-left: 10px;
+    }
+    .portalCenter nav li a:hover{
+        text-decoration: none;
+    }
+    .portalCenter nav li a:before, .portalCenter nav li a:after{
+        content: '';
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        top: 0;
+        background-color: rgba(23,23,23,.6);
+        -webkit-transition: width .2s; /* Safari */
+        transition: width .2s;
+        opacity: 0;
+
+    }
+    .portalCenter nav li a:after{
+      /*background-color: red;*/
+      -webkit-transition: width .9s; /* Safari */
+      transition: width .9s;
+
+    }
+    .portalCenter nav li a:hover:after,.portalCenter nav li a:hover:before{
+      width: 250%;
+      opacity: 1;
     }

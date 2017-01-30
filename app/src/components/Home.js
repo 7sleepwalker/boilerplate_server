@@ -17,9 +17,9 @@ export default class Home extends Component {
         return (
             <div className="App">
                 {nickName ? (
-                    <PortalCenter nickName={nickName} content={this.props.content.portalCenter}></PortalCenter>
+                    <PortalCenter socket={this.props.socket} nickName={nickName} content={this.props.content.portalCenter}></PortalCenter>
                 ) : (
-                    <LoginScreen content={this.props.content.loginScreen}></LoginScreen>
+                    <LoginScreen socket={this.props.socket} content={this.props.content.loginScreen}></LoginScreen>
                 )}
             </div>
         );

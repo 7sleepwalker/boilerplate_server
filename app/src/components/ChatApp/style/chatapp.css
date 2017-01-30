@@ -1,0 +1,29 @@
+
+#chat-box .users, #chat-box .messages, #chat-box .message_form{
+  padding: 0 10px;
+}
+.message{
+  font-size: 14px;
+}
+.message_form{
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+.message_form input{
+  background-color: #eee;
+  color: #000;
+  font-size: 14px;
+  box-shadow: 0;
+  width: calc(100% + 20px);
+  height: 40px;
+  padding: 10px;
+  margin: 0 -10px;
+
+}
+body.emptyRoom{
+  /*background-color: #333;*/
+}
+body.gamingRoom{
+  /*background-color: #fff;*/
+}

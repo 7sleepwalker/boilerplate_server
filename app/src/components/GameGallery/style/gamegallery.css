@@ -1,0 +1,37 @@
+.gameGallery{
+}
+.gameGallery:after{
+  content: "";
+  opacity: 0.05;
+  background-image: url('../img/games_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.gameGallery__back{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  right: 25px;
+  top:25px;
+  color: #eee;
+  z-index: 1000;
+  transition: all .3s;
+}
+.gameGallery__back:hover{
+  text-decoration: none;
+  color: #999;
+}
+.gameGallery__back span{
+  margin: auto;
+  font-size: 25px;
+  padding-left: 12px;
+}
+.gameGallery__back-title{
+  text-align: center;
+}
